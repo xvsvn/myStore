@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CollectionViewTableViewCell: UITableViewCell {
 
     
     static let identifier = "CollectionViewTableViewCell"
     
-    
+    var items:[ResultItem] = []
     
     private let collectionView: UICollectionView = {
            
@@ -34,6 +35,7 @@ class CollectionViewTableViewCell: UITableViewCell {
        
         contentView.addSubview(collectionView)
       
+        collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.id)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -53,22 +55,34 @@ class CollectionViewTableViewCell: UITableViewCell {
         collectionView.frame = contentView.bounds
     }
     
+    func reload(items:[ResultItem]){
+        self.items = items
+    }
     
 }
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
    
   
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-    cell.backgroundColor = .red
-    cell.layer.cornerRadius = 20
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.id, for: indexPath) as!
+    ImageCollectionViewCell
+    let item = items[indexPath.row]
+   //  cell.layer.cornerRadius = 20
+      
+    cell.imgCell.sd_setImage(with: URL(string: item.url), placeholderImage: UIImage(named: "placeholder.png"))
+    cell.imgCell.layer.cornerRadius = 20
+    cell.imgCell.clipsToBounds = true
+    
+    cell.lable.text = item.name.capitalized
+  
+         
     return cell
     
     
 }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
     
     

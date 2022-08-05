@@ -6,14 +6,14 @@
 //
 
 import UIKit
-
+import SDWebImage
 
 
 class HomeViewController: UIViewController {
    
     let sectionTitles:[String] = ["Organic Foods", "Bakery and Bread","Cereals and Breakfast foods", "Beverages or Drinks", "Meat and Seafood", "Fresh dairy products", "Snacks and Crackers", "Pasta and Rice"]
     
-   
+    var resultArr:[ResultItem] = []
     
     private let homeFedTable: UITableView = {
           
@@ -68,7 +68,7 @@ class HomeViewController: UIViewController {
         let decoder = JSONDecoder()
         do {
             let model = try decoder.decode(Result.self, from: data)
-            print(model)
+            resultArr = model.data
         } catch {
             print("Error: \(error)")
         }
@@ -106,17 +106,17 @@ class HomeViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            
+            if indexPath.section == 0 {
             guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
-                if indexPath.section == 0 {
-                    let cell = UITableViewCell()
-                    cell.backgroundColor = .blue
-                    return cell
-                }
                 return UITableViewCell()
             }
+            cell.reload(items: resultArr)
             return cell
+            } else {
+                return UITableViewCell()
+            }
         }
+      
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             
