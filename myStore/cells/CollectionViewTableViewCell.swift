@@ -8,9 +8,16 @@
 import UIKit
 import SDWebImage
 
+
+
+protocol CollectionViewTableViewCellDelegate: AnyObject {
+    func collectionViewTableViewCellDidTapCell(item:ResultItem)
+}
+
+
 class CollectionViewTableViewCell: UITableViewCell {
 
-    
+    weak var delegate: CollectionViewTableViewCellDelegate?
     static let identifier = "CollectionViewTableViewCell"
     
     var items:[ResultItem] = []
@@ -84,6 +91,8 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.collectionViewTableViewCellDidTapCell(item: items[indexPath.row])
+    }
     
 }

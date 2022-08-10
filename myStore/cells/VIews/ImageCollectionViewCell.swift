@@ -18,9 +18,10 @@ class ImageCollectionViewCell: UICollectionViewCell {
     let imgCell: UIImageView = {
            let imageView = UIImageView()
            imageView.backgroundColor = UIColor.white
-           imageView.image = UIImage(systemName: "house")
+           imageView.image = UIImage(systemName: "scribble.variable")
            imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .yellow
+           imageView.contentMode = .scaleAspectFill
+        imageView.backgroundColor = .gray
            return imageView
        }()
     

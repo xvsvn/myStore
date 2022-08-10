@@ -111,6 +111,7 @@ class HomeViewController: UIViewController {
                 return UITableViewCell()
             }
             cell.reload(items: resultArr)
+                cell.delegate = self
             return cell
             } else {
                 return UITableViewCell()
@@ -162,6 +163,17 @@ struct ResultItem:Codable{
 
 struct TextString:Codable {
     var name:String
+}
+
+
+extension HomeViewController: CollectionViewTableViewCellDelegate {
+    func collectionViewTableViewCellDidTapCell(item:ResultItem) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = InfoViewController(item: item)
+          //  vc.configure(with: viewModel)
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 let JSON = """
