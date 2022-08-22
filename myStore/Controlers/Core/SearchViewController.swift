@@ -19,7 +19,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
         super.viewDidLoad()
    
         title = "Search products"
-        
+    
         navigationController?.navigationBar.prefersLargeTitles = true
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController

@@ -38,7 +38,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor = .systemBackground
+        contentView.backgroundColor = .black
        
         contentView.addSubview(collectionView)
       
@@ -60,6 +60,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         collectionView.frame = contentView.bounds
+        collectionView.backgroundColor = .black
     }
     
     func reload(items:[ResultItem]){
@@ -81,7 +82,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     cell.imgCell.clipsToBounds = true
     
     cell.lable.text = item.name.capitalized
-  
+    cell.lable.textColor = .white
          
     return cell
     

@@ -20,7 +20,7 @@ class TabBarViewController: UITabBarController {
 //            view.addSubview(menuVC.view)
 //            menuVC.didMove(toParent: self)
 //        }
-            view.backgroundColor = .systemBackground
+            view.backgroundColor = .black
             
             
             let vc1 = UINavigationController(rootViewController: HomeViewController())
