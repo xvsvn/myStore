@@ -19,6 +19,8 @@
 		22A4396A28AFB98500993C23 /* JSONS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4396928AFB98500993C23 /* JSONS.swift */; };
 		22A8E510289D01B400E67E91 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8E50F289D01B400E67E91 /* ImageCollectionViewCell.swift */; };
 		22A8E515289D1F0100E67E91 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8E514289D1F0000E67E91 /* InfoViewController.swift */; };
+		22B9781C2937287C0093A2B2 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9781B2937287C0093A2B2 /* ParseManager.swift */; };
+		22B9781E2938DE4E0093A2B2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */; };
 		3F851B71B673ED8A3A67E539 /* Pods_myStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D5FEED019E983276FE75D /* Pods_myStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		22A8E50F289D01B400E67E91 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		22A8E514289D1F0000E67E91 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		22A90DB42881745B002986A6 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		22B9781B2937287C0093A2B2 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
+		22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		6A67BFC9578DFFFAC169B9B7 /* Pods-myStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStore.debug.xcconfig"; path = "Target Support Files/Pods-myStore/Pods-myStore.debug.xcconfig"; sourceTree = "<group>"; };
 		C02D5FEED019E983276FE75D /* Pods_myStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE7B2D538C2514F1F60C77D /* Pods-myStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStore.release.xcconfig"; path = "Target Support Files/Pods-myStore/Pods-myStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				22A4396928AFB98500993C23 /* JSONS.swift */,
+				22B9781B2937287C0093A2B2 /* ParseManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				224E9E2F28509E5300C22DD5 /* CollectionViewTableViewCell.swift */,
+				22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */,
 				22A8E511289D01CA00E67E91 /* VIews */,
 			);
 			path = cells;
@@ -126,9 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				222DD4FF283A4E7A0035C108 /* HomeViewController.swift */,
+				222DD500283A4E7A0035C108 /* SearchViewController.swift */,
 				222DD4FD283A4E7A0035C108 /* FavouriteViewController.swift */,
 				222DD50B283A55A40035C108 /* TabBarViewController.swift */,
-				222DD500283A4E7A0035C108 /* SearchViewController.swift */,
 				227BC16228699B5300EE5948 /* MenuViewController.swift */,
 			);
 			path = Core;
@@ -170,7 +176,7 @@
 				222DD4E1283A4DA90035C108 /* Sources */,
 				222DD4E2283A4DA90035C108 /* Frameworks */,
 				222DD4E3283A4DA90035C108 /* Resources */,
-				75A79F52C4D600486CA6710D /* [CP] Embed Pods Frameworks */,
+				9C20C047D7FFF6B4E34BE6FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,7 +232,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		75A79F52C4D600486CA6710D /* [CP] Embed Pods Frameworks */ = {
+		9C20C047D7FFF6B4E34BE6FF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +285,8 @@
 				22A8E515289D1F0100E67E91 /* InfoViewController.swift in Sources */,
 				222DD4E9283A4DA90035C108 /* AppDelegate.swift in Sources */,
 				222DD4EB283A4DA90035C108 /* SceneDelegate.swift in Sources */,
+				22B9781C2937287C0093A2B2 /* ParseManager.swift in Sources */,
+				22B9781E2938DE4E0093A2B2 /* SearchTableViewCell.swift in Sources */,
 				22A8E510289D01B400E67E91 /* ImageCollectionViewCell.swift in Sources */,
 				222DD505283A4E7A0035C108 /* HomeViewController.swift in Sources */,
 				22A4396A28AFB98500993C23 /* JSONS.swift in Sources */,

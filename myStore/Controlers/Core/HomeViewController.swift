@@ -13,7 +13,9 @@ class HomeViewController: UIViewController {
    
     let sectionTitles:[String] = ["Organic Foods", "Bakery and Bread", "Beverages or Drinks", "Meat and Seafood", "Fresh dairy products", "Snacks"] //"Pasta and Rice"
     
-    var resultArr:[ResultItem] = []
+  
+    
+   
     
     private let homeFedTable: UITableView = {
           
@@ -30,6 +32,7 @@ class HomeViewController: UIViewController {
 
         json()
         json2()
+        jsonBeverage()
        title = "Home"
         
         
@@ -41,28 +44,7 @@ class HomeViewController: UIViewController {
     }
    
  
-    
-    func json(){
-        let data = JSON.data(using: .utf8)!
-        let decoder = JSONDecoder()
-        do {
-            let model = try decoder.decode(Result.self, from: data)
-            resultArr = model.data
-        } catch {
-            print("Error: \(error)")
-        }
-    }
-    func json2(){
-        let data = JSON2.data(using: .utf8)!
-        let decoder = JSONDecoder()
-        do {
-            let model = try decoder.decode(Result.self, from: data)
-            resultArr = model.data
-        } catch {
-            print("Error: \(error)")
-        }
-    }
-    
+
     override func viewDidLayoutSubviews() {
        super.viewDidLayoutSubviews()
         navigationItem.largeTitleDisplayMode = .never
@@ -74,6 +56,16 @@ class HomeViewController: UIViewController {
 }
     
 
+func jsonBeverage(){
+    let data = JSON3.data(using: .utf8)!
+    let decoder = JSONDecoder()
+    do {
+        let model = try decoder.decode(Result.self, from: data)
+        resultArr2 = model.data
+    } catch {
+        print("Error: \(error)")
+    }
+}
 
 
     
@@ -100,10 +92,27 @@ class HomeViewController: UIViewController {
             guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
                 return UITableViewCell()
             }
-            cell.reload(items: resultArr)
+                cell.reload(items: resultArr)
                 cell.delegate = self
             return cell
-            } else {
+            }
+            if indexPath.section == 1 {
+            guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
+                return UITableViewCell()
+            }
+                cell.reload(items: resultArr1)
+                cell.delegate = self
+            return cell
+            }
+            if indexPath.section == 2 {
+            guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
+                return UITableViewCell()
+            }
+                cell.reload(items: resultArr2)
+                cell.delegate = self
+            return cell
+            }
+            else {
                 return UITableViewCell()
             }
         }

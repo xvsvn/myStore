@@ -48,11 +48,11 @@ class InfoViewController: UIViewController {
    
    
   
-    let item: ResultItem
+    let item2: ResultItem
     
     
     init(item: ResultItem) {
-        self.item = item
+        self.item2 = item
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -68,31 +68,24 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [
-        UIColor.red.cgColor,
-        UIColor.systemTeal.cgColor,
-        UIColor.black.cgColor]
-        view.layer.addSublayer(gradientLayer)
-        
-        
+
+        view.backgroundColor = .black
         navigationItem.largeTitleDisplayMode = .always
 
         view.addSubview(nut)
         view.addSubview(imge)
         view.addSubview(amount)
  
-        title = item.name
+        title = item2.name
         
-        amount.text = item.weight.capitalized
+        amount.text = item2.weight.capitalized
 
         
         
        var text = ""
         addContrains()
      
-        item.nutrition.forEach { item in
+        item2.nutrition.forEach { item in
             
             text += item.name + "\n\n"
     

@@ -23,10 +23,10 @@ class TabBarViewController: UITabBarController {
             view.backgroundColor = .black
             
             
-            let vc1 = UINavigationController(rootViewController: HomeViewController())
-            let vc2 = UINavigationController(rootViewController: SearchViewController())
-            let vc3 = UINavigationController(rootViewController: FavouriteViewController())
-          //  let menuVC = MenuViewController()
+        let vc1 = UINavigationController(rootViewController: HomeViewController())
+        let vc2 = UINavigationController(rootViewController: SearchViewController(items: [ResultItem(name: "Khasan", weight: "", nutrition: [], benefits: "", url: "https://i.ibb.co/dJTvnhQ/milkshake.jpg", harms: "")]))
+        let vc3 = UINavigationController(rootViewController: FavouriteViewController())
+        //  let menuVC = MenuViewController()
         
       
      

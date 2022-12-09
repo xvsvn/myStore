@@ -614,7 +614,7 @@ public let JSON2 = """
       ],
       "benefits": "Muffins can be part of a healthy breakfast, provided they are low in sugar and high in whole grains, protein, and fiber. These muffins tick the boxes, as they cover all of that. They are also lower in calories than traditional fruit filled muffins",
       "url": "https://i.ibb.co/RSMmGPM/Muffin.jpg",
-      "harms": " Eating a daily muffin can harm your heart health and even if you pick a reduced fat blueberry muffin, not only are we looking at\n the same amount of sugar (39 grams), we would also be consuming 540\n milligrams of sodium "
+      "harms": " Eating a daily muffin can harm your heart health and even if you pick a reduced fat blueberry muffin, not only are we looking at the same amount of sugar (39 grams), we would also be consuming 540 milligrams of sodium "
     },
     {
       "name": "Brownie",
@@ -735,6 +735,282 @@ public let JSON2 = """
       "benefits": "Croissants can increase your intake of several important nutrients, including selenium, B vitamins, and vitamin A. These nutrients play a key role in several aspects of health and are essential for the function of your brain, heart, lungs, thyroid, and kidneys.",
       "url": "https://i.ibb.co/LtHNv5Z/Croissant.jpg",
       "harms": "Croissants are often high in sodium. For example, a plain butter croissant contains 219 mg. Consuming a high amount of sodium can increase blood pressure levels, especially in people who are sensitive to the effects of salt."
+    }
+  ]
+}
+"""
+let JSON3 = """
+{
+  "data":[
+    {
+      "name": "Water",
+      "weight": "200 milligrams",
+      "nutrition": [
+        {
+          "name": "Calories: 0"
+        },
+        {
+          "name": "Sodium: 9.5mg"
+        },
+        {
+          "name": "Protein: 0 grams"
+        },
+        {
+          "name": "Carbs: 0 grams"
+        },
+        {
+          "name": "Sugar: 0 grams"
+        },
+        {
+          "name": "Fiber: 0 grams"
+        },
+        {
+          "name": "Fat: 0 grams"
+        }
+      ],
+      "benefits": "Drinking plenty of water each day will ensure you get enough water for essential body functions. Drinking water helps regulate body temperature and keep you cool when you're in hot environments.",
+      "url": "https://i.ibb.co/fQsYhWn/water.webp",
+      "harms": "Drinking way too much water too quickly leads to a condition called hyponatremia or water intoxication. When that happens, the sodium levels in your blood drop way too fast and make you sick."
+    },
+    {
+      "name": "Green tea",
+      "weight": "1 cup",
+      "nutrition": [
+        {
+          "name": "Calories: 2.5"
+        },
+        {
+          "name": "Sodium: 2.5milligrams"
+        },
+        {
+          "name": "Protein: 0 grams"
+        },
+        {
+          "name": "Carbs: 0 grams"
+        },
+        {
+          "name": "Sugar: 0 grams"
+        },
+        {
+          "name": "Fiber: 0 grams"
+        },
+        {
+          "name": "Fat: 0 grams"
+        }
+      ],
+      "benefits": "Green tea contains valuable phytochemicals, it may play a valuable role in disease prevention.3 In addition to containing less caffeine than coffee, green tea also provides minimal calories.",
+      "url": "https://i.ibb.co/WHNL8gn/greenTea.jpg",
+      "harms": "EGCG can be toxic to living cells in higher doses. Higher consumption of EGCG (above 800mg daily) may pose a risk of liver damage.26 A single cup of brewed green tea typically contains between 50mg and 100mg EGCG"
+    },
+    {
+      "name": "Apple juice",
+      "weight": "1 cup (248g)",
+      "nutrition": [
+        {
+          "name": "Calories: 114"
+        },
+        {
+          "name": "Sodium: 9.9 milligramsa"
+        },
+        {
+          "name": "Protein: 0.3 grams"
+        },
+        {
+          "name": "Carbs: 28 grams"
+        },
+        {
+          "name": "Sugar: 24 grams"
+        },
+        {
+          "name": "Fiber: 0.5 grams"
+        },
+        {
+          "name": "Fat:0.3g grams"
+        }
+      ],
+      "benefits": "Apple juice is 88% water and tastes good. This makes it easy to consume — especially for those who are sick and at an increased risk of dehydration . In fact, some pediatricians recommend half-strength apple juice — a mix of half juice, half water — for sick kids who are mildly dehydrated and at least one year old.",
+      "url": "https://i.ibb.co/sbd4kp5/apple-Juice.jpg",
+      "harms": "Any kind of juice, including apple juice, can have an adverse effect on blood sugar. When you eat a whole apple, the fiber in the pulp and skin binds to the fruit's natural sugars as it goes through the gastrointestinal tract. This binding action slows the absorption of sugar. Consequently, the sugar builds up in the bloodstream at a slower rate and lower quantity, compared to how it builds when you drink apple juice."
+    },
+    {
+      "name": "Orange Juice",
+      "weight": "One cup of orange juice (8oz)",
+      "nutrition": [
+        {
+          "name": "Calories: 110"
+        },
+        {
+          "name": "Sodium:9.6 milligrams"
+        },
+        {
+          "name": "Protein: 2 grams"
+        },
+        {
+          "name": "Carbs: 27 grams"
+        },
+        {
+          "name": "Sugar: 20 grams"
+        },
+        {
+          "name": "Fiber: 1 grams"
+        },
+        {
+          "name": "Fat:0 grams"
+        }
+      ],
+      "benefits": "Orange juice, although high in sugar, still provides some health benefits. But keep in mind that you'll gain many of the health benefits of orange juice if you consume a whole orange instead. One average-sized orange has about 60 calories, 15 grams of carbohydrates, and 3 grams of fiber.4 But it also only has 70 milligrams of vitamin C. That's still a substantial amount, but you'll get more vitamin C with a glass of orange juice.",
+      "url": "https://i.ibb.co/p0yTxCJ/ogrange-Juice.jpg",
+      "harms": "Avoid oranges if you have a citrus allergy or if you have experienced reactions to other citrus fruits such as grapefruit or mandarin. Additionally, there are reports of people experiencing asthma due to the inhalation of the peels of citrus fruits, including oranges. If you suspect a citrus allergy or another food allergy, consult your physician for diagnosis and treatment recommendations."
+    },
+    {
+      "name": "Black coffee",
+      "weight": "One cup of brewed black coffee with no cream or sugar added (240g)",
+      "nutrition": [
+        {
+          "name": "Calories: 2.4"
+        },
+        {
+          "name": "Sodium: 4.8 milligrams"
+        },
+        {
+          "name": "Protein:0.3 grams"
+        },
+        {
+          "name": "Carbs: 0 grams"
+        },
+        {
+          "name": "Sugar: 0 grams"
+        },
+        {
+          "name": "Fiber: 0 grams"
+        },
+        {
+          "name": "Fat:0 grams"
+        }
+      ],
+      "benefits": "Moderate daily consumption of coffee—about 4 servings—had a positive effect on reducing risk of heart failure.",
+      "url": "https://i.ibb.co/bNVq0yN/Black-Coffee.jpg",
+      "harms": "Despite these health benefits, coffee can exert negative effects on some people. For example, a 2017 study found that the risk of bone fracture increases significantly with every cup of coffee an older woman drinks.9 By comparison, the risk in older men appears to decrease. This undermines some of the early evidence suggesting that coffee was inherently beneficial to osteoporosis, a condition which affects women more than men."
+    },
+    {
+      "name": "Milkshake",
+      "weight": "100 grams",
+      "nutrition": [
+        {
+          "name": "Calories: 112"
+        },
+        {
+          "name": "Sodium: 95 milligrams"
+        },
+        {
+          "name": "Protein: 3.9 grams"
+        },
+        {
+          "name": "Carbs: 18 grams"
+        },
+        {
+          "name": "Sugar: 18 grams"
+        },
+        {
+          "name": "Fiber: 0 grams"
+        },
+        {
+          "name": "Fat:3 grams"
+        }
+      ],
+      "benefits": "Milkshake aid in boosting your muscle potassium and glycogen stores. It is rich in carbs which your body digest and absorbs slowly. But this contains a lower glycemic compound which is not like simple carbs. It also prevents muscle cramps.",
+      "url": "https://i.ibb.co/dJTvnhQ/milkshake.jpg",
+      "harms": "A chocolate milkshake may be bliss for your taste buds, but it's not so good for your blood vessels. A small new study suggests that consuming just a single, high-fat meal or food item, like a milkshake, may lead to unhealthy changes in your blood vessels and red blood cells"
+    },
+    {
+      "name": "Coke",
+      "weight": "100 milligrams",
+      "nutrition": [
+        {
+          "name": "Calories: 180"
+        },
+        {
+          "name": "Sodium: 10 milligrams"
+        },
+        {
+          "name": "Protein: 0 grams"
+        },
+        {
+          "name": "Carbs: 10.6 grams"
+        },
+        {
+          "name": "Sugar: 10.6 grams"
+        },
+        {
+          "name": "Fiber: 0 grams"
+        },
+        {
+          "name": "Fat: 0 grams"
+        }
+      ],
+      "benefits": "One of the benefits of drinking Coke is that it contains caffeine, a natural stimulant found in the kola nut, coffee beans and tea leaves. Caffeine makes you feel more alert when you're tired and might increase your performance when embarking on certain tasks. ",
+      "url": "https://i.ibb.co/nnbkQJB/coke.jpg",
+      "harms": "Even one or two colas a day could increase your risk of type 2 diabetes by more than 20%. Sugar intake is linked to high blood pressure, high cholesterol, and excess fat, all of which increase the risk of heart disease. Colas and other sugary drinks have been linked to an increased risk of pancreatic cancer."
+    },
+    {
+      "name": "Cacao",
+      "weight": "Two tablespoons of cacao powder",
+      "nutrition": [
+        {
+          "name": "Calories: 130"
+        },
+        {
+          "name": "Sodium: 21 milligrams"
+        },
+        {
+          "name": "Protein: 7 grams"
+        },
+        {
+          "name": "Carbs: 13 grams"
+        },
+        {
+          "name": "Sugar: 0 grams"
+        },
+        {
+          "name": "Fiber: 8 grams"
+        },
+        {
+          "name": "Fat: 6 grams"
+        }
+      ],
+      "benefits": "Cacao powder is packed with flavonoids. These nutrients that have been shown to help lower blood pressure, improve blood flow to the brain and heart, and aid in preventing blood clots. The flavonoids in cacao powder may help increase insulin sensitivity, reducing your risk of diabetes.",
+      "url": "https://i.ibb.co/YhNJJPr/cacao.jpg",
+      "harms": "Eating large amounts might cause caffeine-related side effects such as nervousness, increased urination, sleeplessness, and a fast heartbeat. Cocoa can cause allergic skin reactions and might also trigger migraine headaches. It can also cause nausea, stomach discomfort, constipation, and gas."
+    },
+    {
+      "name": "Yogurt",
+      "weight": "100 grams",
+      "nutrition": [
+        {
+          "name": "Calories: 61"
+        },
+        {
+          "name": "Sodium: 36  milligrams"
+        },
+        {
+          "name": "Protein: 3.5 grams"
+        },
+        {
+          "name": "Carbs: 4.7rams"
+        },
+        {
+          "name": "Sugar: 4.7 grams"
+        },
+        {
+          "name": "Fiber: 0 grams"
+        },
+        {
+          "name": "Fat: 3.3 grams"
+        }
+      ],
+      "benefits": "Yogurts can be high in protein, calcium, vitamins, and live culture, or probiotics, which can enhance the gut microbiota. These can offer protection for bones and teeth and help prevent digestive problems. Low-fat yogurt can be a useful source of protein on a weight-loss diet. Probiotics may boost the immune system.",
+      "url": "https://i.ibb.co/hRgwxL3/yogurt.jpg",
+      "harms": "It might make you feel bloated or give you gas. Both regular yogurt and Greek yogurt contain a small amount of lactose, which might be problematic for individuals who are lactose intolerant.Lactose is milk sugar which is broken down by the enzyme lactase."
     }
   ]
 }
