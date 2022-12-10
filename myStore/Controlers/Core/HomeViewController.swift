@@ -56,16 +56,6 @@ class HomeViewController: UIViewController {
 }
     
 
-func jsonBeverage(){
-    let data = JSON3.data(using: .utf8)!
-    let decoder = JSONDecoder()
-    do {
-        let model = try decoder.decode(Result.self, from: data)
-        resultArr2 = model.data
-    } catch {
-        print("Error: \(error)")
-    }
-}
 
 
     
@@ -142,22 +132,7 @@ func jsonBeverage(){
         }
     }
     
-struct Result:Codable {
-    let data: [ResultItem]
-    
-}
-struct ResultItem:Codable{
-    let name: String
-    let weight:String
-    let nutrition:[TextString]
-    let benefits: String
-    let url: String
-    let harms: String
-}
 
-struct TextString:Codable {
-    var name:String
-}
 
 extension HomeViewController: CollectionViewTableViewCellDelegate {
     func collectionViewTableViewCellDidTapCell(item:ResultItem) {

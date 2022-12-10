@@ -8,26 +8,35 @@
 import UIKit
 import SDWebImage
 class SearchViewController: UIViewController, UISearchResultsUpdating {
+    
    
- 
-    var items:[ResultItem] = []
+    let searchController = UISearchController()
   
     private let  discoverTableView:UITableView = {
         var tableView = UITableView()
         tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
+       
         return tableView
     }()
     
-    let searchController = UISearchController()
+   
+    
+   
  
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        DiscoverJson()
         addConstraints()
-        
+        view.backgroundColor = .white
     }
+    
+    
+   
+    
+    
+    
     func addConstraints() {
         title = "Search products"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -38,8 +47,11 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
         discoverTableView.dataSource =  self
         view.addSubview(discoverTableView)
         discoverTableView.frame = view.bounds
-        discoverTableView.backgroundColor = .white
+        discoverTableView.backgroundColor = .black
     }
+    
+    
+    
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else {
@@ -48,32 +60,33 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
         print(text)
     }
     
-    
-    func reload(items:[ResultItem]){
-        self.items = items
-    }
-    
+  
 
 }
+
+
+
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count 
+        return  discoverItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.identifier, for: indexPath) as!
         SearchTableViewCell
+        let item = discoverItems[indexPath.row]
+        cell.reloading(items: discoverItems)
+        cell.titleLabel.text = item.name
+        cell.prodImg.sd_setImage(with: URL(string: item.url), placeholderImage: UIImage(named: "placeholder.png"))
        
 
-        cell.reload(items: item)
-        
-        return cell
-        
-        
-    }
+   return cell
+}
+    
+
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 115
     }
     
     

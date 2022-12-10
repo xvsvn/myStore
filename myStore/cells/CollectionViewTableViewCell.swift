@@ -20,7 +20,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     weak var delegate: CollectionViewTableViewCellDelegate?
     static let identifier = "CollectionViewTableViewCell"
     
-    var items:[ResultItem] = []
+      var items:[ResultItem] = []
     
     private let collectionView: UICollectionView = {
            
@@ -63,8 +63,8 @@ class CollectionViewTableViewCell: UITableViewCell {
         collectionView.backgroundColor = .black
     }
     
-    func reload(items:[ResultItem]){
-        self.items = items
+     func reload(items:[ResultItem]){
+         self.items = items
     }
     
 }

@@ -69,7 +69,7 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
        
 
-        view.backgroundColor = .black
+        view.backgroundColor = .white
         navigationItem.largeTitleDisplayMode = .always
 
         view.addSubview(nut)

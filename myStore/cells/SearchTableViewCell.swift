@@ -11,12 +11,14 @@ import SDWebImage
 class SearchTableViewCell: UITableViewCell {
     
     static let identifier = "SearchTableViewCell"
-    var items:[ResultItem] = []
-    var resultArr2:[ResultItem] = []
-        
+    
+    var allProducts:[ResultItem] = []
+  
+    
         
         let titleLabel: UILabel = {
             let label = UILabel()
+            label.textColor = .white
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
@@ -26,6 +28,7 @@ class SearchTableViewCell: UITableViewCell {
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             imageView.clipsToBounds = true
+           imageView.layer.cornerRadius = 15
             return imageView
         }()
         
@@ -33,7 +36,7 @@ class SearchTableViewCell: UITableViewCell {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
             contentView.addSubview(prodImg)
             contentView.addSubview(titleLabel)
-            contentView.backgroundColor = .green
+            contentView.backgroundColor = .black
             
             applyConstraints()
             
@@ -42,7 +45,7 @@ class SearchTableViewCell: UITableViewCell {
         
         private func applyConstraints() {
             let prodImgCons = [
-                prodImg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+                prodImg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
                 prodImg.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
                 prodImg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
                 prodImg.widthAnchor.constraint(equalToConstant: 100)
@@ -56,7 +59,7 @@ class SearchTableViewCell: UITableViewCell {
             
             
          
-            
+    
             NSLayoutConstraint.activate(prodImgCons)
             NSLayoutConstraint.activate(titleLabelConstraints)
           
@@ -73,9 +76,8 @@ class SearchTableViewCell: UITableViewCell {
 //            titleLabel.text = model.titleName
 //        }
         
-    func reload(items: ResultItem ) {
-       prodImg.sd_setImage(with: URL(string: items.url), placeholderImage: UIImage(named: "placeholder.png"))
-        titleLabel.text = items.name
+    func reloading(items: [ResultItem] ) {
+      
     }
     
 
