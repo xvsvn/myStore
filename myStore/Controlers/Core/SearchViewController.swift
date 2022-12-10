@@ -19,7 +19,8 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
     }()
     
     let searchController = UISearchController()
-
+ 
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,9 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
     }
     
     
-    
+    func reload(items:[ResultItem]){
+        self.items = items
+    }
     
 
 }

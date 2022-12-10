@@ -78,11 +78,6 @@ func jsonBeverage(){
         
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//            if section == 0 {
-//                return arr1.count
-//            } else if section == 1{
-//                return arr2.count
-//            }
             return 1
             
         }
