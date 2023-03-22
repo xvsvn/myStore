@@ -11,13 +11,15 @@ var resultArr:[ResultItem] = []
 var resultArr1:[ResultItem] = []
 var resultArr2:[ResultItem] = []
 var discoverItems:[ResultItem] = []
+var products:[ResultItem] = []
+var searchResults:[ResultItem] = []
 
 struct Result:Codable {
     let data: [ResultItem]
     
 }
 struct ResultItem:Codable{
-    let name: String
+    let name: String?
     let weight:String
     let nutrition:[TextString]
     let benefits: String
@@ -67,6 +69,16 @@ func DiscoverJson(){
     do {
         let model = try decoder.decode(Result.self, from: data)
         discoverItems = model.data
+    } catch {
+        print("Error: \(error)")
+    }
+}
+func producFunc(){
+    let data = discoverProducts.data(using: .utf8)!
+    let decoder = JSONDecoder()
+    do {
+        let model = try decoder.decode(Result.self, from: data)
+        products = model.data
     } catch {
         print("Error: \(error)")
     }

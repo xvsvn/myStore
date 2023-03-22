@@ -11,7 +11,7 @@ class InfoViewController: UIViewController {
  
   
     var arr:[TextString] = []
-    
+    var allProds:ResultItem?
 
     private let amount:UILabel = {
         let nutrition  = UILabel()
@@ -37,7 +37,6 @@ class InfoViewController: UIViewController {
     private let imge: UIImageView = {
         let image = UIImageView()
         image.backgroundColor = UIColor.white
-     //   image.image = UIImage(named: item.url)
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFill
         image.backgroundColor = .gray
@@ -48,17 +47,14 @@ class InfoViewController: UIViewController {
    
    
   
-    let item2: ResultItem
+  private  let item2: ResultItem
     
     
-    init(item: ResultItem) {
+     init(item: ResultItem) {
         self.item2 = item
         super.init(nibName: nil, bundle: nil)
     }
     
-    
-   
-     
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -69,7 +65,7 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
        
 
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         navigationItem.largeTitleDisplayMode = .always
 
         view.addSubview(nut)
@@ -88,7 +84,6 @@ class InfoViewController: UIViewController {
         item2.nutrition.forEach { item in
             
             text += item.name + "\n\n"
-    
         }
         
         nut.text = text

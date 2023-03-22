@@ -81,7 +81,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     cell.imgCell.layer.cornerRadius = 20
     cell.imgCell.clipsToBounds = true
     
-    cell.lable.text = item.name.capitalized
+    cell.lable.text = item.name?.capitalized
     cell.lable.textColor = .white
          
     return cell
