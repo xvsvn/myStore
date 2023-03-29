@@ -63,8 +63,8 @@ class CollectionViewTableViewCell: UITableViewCell {
         collectionView.backgroundColor = .black
     }
     
-     func reload(items:[ResultItem]){
-         self.items = items
+  public   func reload(items:[ResultItem]){
+      self.items = items
     }
     
 }

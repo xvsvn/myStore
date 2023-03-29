@@ -74,7 +74,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource, UISe
         SearchTableViewCell
         let prod = (searchController.isActive) ?
         searchResults[indexPath.row] : discoverItems[indexPath.row]
-       // let item = discoverItems
+      
         cell.reloading(items: discoverItems)
         cell.titleLabel.text = prod.name
         cell.prodImg.sd_setImage(with: URL(string: prod.url), placeholderImage: UIImage(named: "placeholder.png"))
@@ -90,10 +90,17 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource, UISe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         discoverTableView.deselectRow(at: indexPath, animated: true)
-        let category = searchResults[indexPath.row]
-        let vc = InfoViewController(item: category)
-        navigationController?.pushViewController(vc, animated: true)
-       
+        if searchController.isActive {
+            let category = searchResults[indexPath.row]
+            let vc1 = InfoViewController(item: category)
+            navigationController?.pushViewController(vc1, animated: true)
+        }
+        else {
+            let allItems = discoverItems[indexPath.row]
+            let vc2 = InfoViewController(item: allItems)
+            navigationController?.pushViewController(vc2, animated: true)
+        }
+      
     }
     
     func updateSearchResults(for searchController: UISearchController) {

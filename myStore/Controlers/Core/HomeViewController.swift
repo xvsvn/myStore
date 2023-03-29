@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
         view.addSubview(homeFedTable)
         homeFedTable.delegate = self
         homeFedTable.dataSource = self
-        homeFedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 200))
+     //   homeFedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 200))
     }
    
  
@@ -124,12 +124,7 @@ class HomeViewController: UIViewController {
         func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
             return sectionTitles[section]
         }
-        func scrollViewDidScroll(_ scrollView: UIScrollView) {
-            let defaultOffset = view.safeAreaInsets.top
-            let offset = scrollView.contentOffset.y + defaultOffset
-            
-            navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
-        }
+
     }
     
 
@@ -138,7 +133,7 @@ extension HomeViewController: CollectionViewTableViewCellDelegate {
     func collectionViewTableViewCellDidTapCell(item:ResultItem) {
         DispatchQueue.main.async { [weak self] in
             let vc = InfoViewController(item: item)
-            self?.navigationController?.navigationBar.prefersLargeTitles = true
+          
          
             self?.navigationController?.pushViewController(vc, animated: true)
         }

@@ -13,6 +13,7 @@ var resultArr2:[ResultItem] = []
 var discoverItems:[ResultItem] = []
 var products:[ResultItem] = []
 var searchResults:[ResultItem] = []
+var productImg:[ResultItem] = []
 
 struct Result:Codable {
     let data: [ResultItem]
@@ -74,6 +75,16 @@ func DiscoverJson(){
     }
 }
 func producFunc(){
+    let data = discoverProducts.data(using: .utf8)!
+    let decoder = JSONDecoder()
+    do {
+        let model = try decoder.decode(Result.self, from: data)
+        products = model.data
+    } catch {
+        print("Error: \(error)")
+    }
+}
+func producImages(){
     let data = discoverProducts.data(using: .utf8)!
     let decoder = JSONDecoder()
     do {

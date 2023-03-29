@@ -21,6 +21,7 @@
 		22A8E515289D1F0100E67E91 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8E514289D1F0000E67E91 /* InfoViewController.swift */; };
 		22B9781C2937287C0093A2B2 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9781B2937287C0093A2B2 /* ParseManager.swift */; };
 		22B9781E2938DE4E0093A2B2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */; };
+		22F9A62C29D183C400754727 /* InfoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F9A62B29D183C400754727 /* InfoDetailTableViewCell.swift */; };
 		3F851B71B673ED8A3A67E539 /* Pods_myStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D5FEED019E983276FE75D /* Pods_myStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		22A90DB42881745B002986A6 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		22B9781B2937287C0093A2B2 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
 		22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		22F9A62B29D183C400754727 /* InfoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailTableViewCell.swift; sourceTree = "<group>"; };
 		6A67BFC9578DFFFAC169B9B7 /* Pods-myStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStore.debug.xcconfig"; path = "Target Support Files/Pods-myStore/Pods-myStore.debug.xcconfig"; sourceTree = "<group>"; };
 		C02D5FEED019E983276FE75D /* Pods_myStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE7B2D538C2514F1F60C77D /* Pods-myStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStore.release.xcconfig"; path = "Target Support Files/Pods-myStore/Pods-myStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				224E9E2F28509E5300C22DD5 /* CollectionViewTableViewCell.swift */,
+				22F9A62B29D183C400754727 /* InfoDetailTableViewCell.swift */,
 				22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */,
 				22A8E511289D01CA00E67E91 /* VIews */,
 			);
@@ -284,6 +287,7 @@
 				222DD506283A4E7A0035C108 /* SearchViewController.swift in Sources */,
 				22A8E515289D1F0100E67E91 /* InfoViewController.swift in Sources */,
 				222DD4E9283A4DA90035C108 /* AppDelegate.swift in Sources */,
+				22F9A62C29D183C400754727 /* InfoDetailTableViewCell.swift in Sources */,
 				222DD4EB283A4DA90035C108 /* SceneDelegate.swift in Sources */,
 				22B9781C2937287C0093A2B2 /* ParseManager.swift in Sources */,
 				22B9781E2938DE4E0093A2B2 /* SearchTableViewCell.swift in Sources */,
@@ -419,6 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4K6N28GMCD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -447,6 +452,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4K6N28GMCD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
