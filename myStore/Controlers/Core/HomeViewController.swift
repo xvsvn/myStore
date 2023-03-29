@@ -73,32 +73,30 @@ class HomeViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            if indexPath.section == 0 {
+          
             guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
                 return UITableViewCell()
-            }
+                 
+                }
+                    
+                    
+            switch indexPath.section {
+                
+            case 0:
                 cell.reload(items: resultArr)
                 cell.delegate = self
             return cell
-            }
-            if indexPath.section == 1 {
-            guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
-                return UITableViewCell()
-            }
+            
+            case 1:
                 cell.reload(items: resultArr1)
                 cell.delegate = self
             return cell
-            }
-            if indexPath.section == 2 {
-            guard let  cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
-                return UITableViewCell()
-            }
+        case 2:
                 cell.reload(items: resultArr2)
                 cell.delegate = self
             return cell
-            }
-            else {
-                return UITableViewCell()
+            default:
+               return UITableViewCell()
             }
         }
       
