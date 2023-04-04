@@ -22,6 +22,7 @@
 		22B9781C2937287C0093A2B2 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9781B2937287C0093A2B2 /* ParseManager.swift */; };
 		22B9781E2938DE4E0093A2B2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */; };
 		22F9A62C29D183C400754727 /* InfoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F9A62B29D183C400754727 /* InfoDetailTableViewCell.swift */; };
+		22F9A62F29D5635100754727 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F9A62E29D5635100754727 /* Defaults.swift */; };
 		3F851B71B673ED8A3A67E539 /* Pods_myStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D5FEED019E983276FE75D /* Pods_myStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		22B9781B2937287C0093A2B2 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
 		22B9781D2938DE4E0093A2B2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		22F9A62B29D183C400754727 /* InfoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailTableViewCell.swift; sourceTree = "<group>"; };
+		22F9A62E29D5635100754727 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		6A67BFC9578DFFFAC169B9B7 /* Pods-myStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStore.debug.xcconfig"; path = "Target Support Files/Pods-myStore/Pods-myStore.debug.xcconfig"; sourceTree = "<group>"; };
 		C02D5FEED019E983276FE75D /* Pods_myStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE7B2D538C2514F1F60C77D /* Pods-myStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStore.release.xcconfig"; path = "Target Support Files/Pods-myStore/Pods-myStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		222DD50D283B53D70035C108 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				22F9A62D29D5633700754727 /* UserDefaults */,
 				22B9781B2937287C0093A2B2 /* ParseManager.swift */,
 				22A4396928AFB98500993C23 /* JSONS.swift */,
 			);
@@ -149,6 +152,14 @@
 				22A8E514289D1F0000E67E91 /* InfoViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		22F9A62D29D5633700754727 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				22F9A62E29D5635100754727 /* Defaults.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		9E6ADC17B69BCE2CF6C307E2 /* Frameworks */ = {
@@ -293,6 +304,7 @@
 				22B9781E2938DE4E0093A2B2 /* SearchTableViewCell.swift in Sources */,
 				22A8E510289D01B400E67E91 /* ImageCollectionViewCell.swift in Sources */,
 				222DD505283A4E7A0035C108 /* HomeViewController.swift in Sources */,
+				22F9A62F29D5635100754727 /* Defaults.swift in Sources */,
 				22A4396A28AFB98500993C23 /* JSONS.swift in Sources */,
 				227BC16328699B5300EE5948 /* MenuViewController.swift in Sources */,
 			);

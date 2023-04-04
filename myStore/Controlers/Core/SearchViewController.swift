@@ -14,7 +14,8 @@ class SearchViewController: UIViewController {
     
     var searchController:UISearchController!
     var searchResults:[ResultItem] = []
-  
+   
+    var favorites:[ResultItem] = []
  
     
     private let  discoverTableView:UITableView = {
@@ -93,12 +94,15 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource, UISe
         if searchController.isActive {
             let category = searchResults[indexPath.row]
             let vc1 = InfoViewController(item: category)
+            vc1.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(vc1, animated: true)
         }
         else {
             let allItems = discoverItems[indexPath.row]
             let vc2 = InfoViewController(item: allItems)
+            vc2.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(vc2, animated: true)
+           
         }
       
     }
@@ -112,9 +116,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource, UISe
 
     
     func filterContent(for searchText:String) {
-        searchResults = products.filter({(restaurant) -> Bool in
+        searchResults = products.filter({(prod) -> Bool in
             
-            if let name = restaurant.name {
+            if let name = prod.name {
                 let isMatch = name.localizedCaseInsensitiveContains(searchText)
                 return isMatch
             }

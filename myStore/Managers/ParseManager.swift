@@ -10,10 +10,11 @@ import Foundation
 var resultArr:[ResultItem] = []
 var resultArr1:[ResultItem] = []
 var resultArr2:[ResultItem] = []
+var resultArr3:[ResultItem] = []
 var discoverItems:[ResultItem] = []
 var products:[ResultItem] = []
 var searchResults:[ResultItem] = []
-var productImg:[ResultItem] = []
+var favorites:[ResultItem] = []
 
 struct Result:Codable {
     let data: [ResultItem]
@@ -63,6 +64,16 @@ func jsonBeverage(){
         print("Error: \(error)")
     }
 }
+func jsonMeat(){
+    let data = JSON4.data(using: .utf8)!
+    let decoder = JSONDecoder()
+    do {
+        let model = try decoder.decode(Result.self, from: data)
+        resultArr3 = model.data
+    } catch {
+        print("Error: \(error)")
+    }
+}
 
 func DiscoverJson(){
     let data = discoverProducts.data(using: .utf8)!
@@ -84,7 +95,7 @@ func producFunc(){
         print("Error: \(error)")
     }
 }
-func producImages(){
+func favoriteData(){
     let data = discoverProducts.data(using: .utf8)!
     let decoder = JSONDecoder()
     do {

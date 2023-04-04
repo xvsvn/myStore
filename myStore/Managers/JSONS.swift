@@ -979,7 +979,7 @@ let JSON3 = """
         }
       ],
       "benefits": "Cacao powder is packed with flavonoids. These nutrients that have been shown to help lower blood pressure, improve blood flow to the brain and heart, and aid in preventing blood clots. The flavonoids in cacao powder may help increase insulin sensitivity, reducing your risk of diabetes.",
-      "url": "https://i.ibb.co/YhNJJPr/cacao.jpg",
+      "url": "https://i.ibb.co/YhNJJPr/cacao.jpg", 
       "harms": "Eating large amounts might cause caffeine-related side effects such as nervousness, increased urination, sleeplessness, and a fast heartbeat. Cocoa can cause allergic skin reactions and might also trigger migraine headaches. It can also cause nausea, stomach discomfort, constipation, and gas."
     },
     {
@@ -1014,6 +1014,193 @@ let JSON3 = """
     }
   ]
 }
+"""
+let JSON4 = """
+{
+  "data": [
+    {
+      "name": "Beef",
+      "weight": "100g",
+      "nutrition": [
+        {
+          "name": "Calories:143"
+        },
+        {
+          "name": "Sodium: "
+        },
+        {
+          "name": "Protein:26g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:3,5g"
+        }
+      ],
+      "benefits": "Beef is a good source of zinc, which the body needs to heal damaged tissue and support a healthy immune system. Children and adolescents also need healthy amounts of zinc to make sure they thrive and grow. A single serving of beef supplies the recommended daily amount of protein, helping to prevent lost muscle mass. Losing muscle mass can make you feel weaker and may make it difficult to keep your balance, especially if you’re age 55 or older.",
+      "url": "https://i.ibb.co/vjTkr7v/Beef-loin.webp",
+      "harms": "Beef can be a healthy part of your diet, but should be eaten in moderation. According to experts from Harvard University, an accumulated body of evidence shows a clear link between high intake of red and processed meats and a higher risk for heart disease, cancer, diabetes, and premature death."
+    },
+     {
+      "name": "Chicken",
+      "weight": "85g",
+      "nutrition": [
+        {
+          "name": "Calories:143"
+        },
+        {
+          "name": "Sodium:60mg"
+        },
+        {
+          "name": "Protein:20"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:11g"
+        }
+      ],
+      "benefits": "A food rich in protein, chicken can help with weight management and reduce the risk of heart disease. Chicken contains the amino acid tryptophan, which has been linked to higher levels of serotonin (the “feel good” hormone) in our brains.",
+      "url": "https://i.ibb.co/6yVqSnt/should-you-wash-chicken.webp",
+      "harms": "Americans eat more chicken than any other meat. Chicken can be a nutritious choice, but raw chicken is often contaminated with Campylobacter bacteria and sometimes with Salmonella and Clostridium perfringens bacteria. If you eat undercooked chicken, you can get a foodborne illness, also called food poisoning."
+    },
+    {
+      "name": "Lamb",
+      "weight": "100g",
+      "nutrition": [
+        {
+          "name": "Calories:258"
+        },
+        {
+          "name": "Sodium:"
+        },
+        {
+          "name": "Protein:25.6g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:16.5g"
+        }
+      ],
+      "benefits": "Lamb contains several bioactive substances — such as creatine, CLA, and cholesterol — that may benefit health in various ways.",
+      "url": "https://i.ibb.co/5nfJSYG/36-lamb-00.jpg",
+      "harms": "High consumption of red meat like lamb increases the risk of serious and chronic illnesses, including stroke, prostate cancer, breast cancer, colorectal cancer, pancreatic cancer, heart disease, and diabetes."
+    },
+   {
+      "name": "Turkey",
+      "weight": "113.4g",
+      "nutrition": [
+        {
+          "name": "Calories:162"
+        },
+        {
+          "name": "Sodium:127mg"
+        },
+        {
+          "name": "Protein:25g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:6g"
+        }
+      ],
+      "benefits": "Turkey is a great source of protein. The body uses protein to build and repair bones, muscles, cartilage, skin, blood, and tissue. Protein is a macronutrient, which means that your body needs a lot of it. Your body can’t store protein, so you need to consume it every day.",
+      "url": "https://i.ibb.co/nwzJMKs/file-20191121-547-x3akt7.jpg",
+      "harms": "Generally, all processed meat products, including turkey, contribute a significant amount of sodium, she said. Higher sodium contributes to high blood pressure and risk of cardiovascular events."
+    },
+     {
+      "name": "Salmon",
+      "weight": "",
+      "nutrition": [
+        {
+          "name": "Calories:121"
+        },
+        {
+          "name": "Sodium:37.4mg"
+        },
+        {
+          "name": "Protein:17g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar: 0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:5.4g"
+        }
+      ],
+      "benefits": "Salmon provides vitamin A and multiple B vitamins. It is one of the few natural food sources of vitamin D (wild salmon is a particularly good source).5 Salmon is also rich in several minerals, including magnesium, potassium, phosphorus, zinc, and selenium. Additionally, canned salmon contains lots of calcium (due to the edible bones).",
+      "url": "https://i.ibb.co/kqp63ym/51815b-WAUp-L.jpg",
+      "harms": "Eating large amounts of salmon and other fish could expose you to cancer-causing chemicals, or carcinogens. Fish get these chemicals by swimming in polluted water. Although both wild and farmed salmon carry this risk, the benefit–risk ratio for wild salmon is significantly greater."
+    },
+    {
+      "name": "Oysters",
+      "weight": "100g",
+      "nutrition": [
+        {
+          "name": "Calories:121"
+        },
+        {
+          "name": "Sodium:417mg"
+        },
+        {
+          "name": "Protein:9g"
+        },
+        {
+          "name": "Carbs:4g"
+        },
+        {
+          "name": "Sugar: 0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat: 3g"
+        }
+      ],
+      "benefits": "Oysters are a rich source of vitamin D, copper, zinc, and manganese. These micronutrients, in combination with calcium, are thought to be key to slowing or even preventing bone loss in older women due to osteoporosis. Additionally, dietary sources of these minerals are thought to be more effective than supplements.",
+      "url": "https://i.ibb.co/t4725Km/oyster-245235925.jpg",
+      "harms": "The illnesses of most concern from eating raw or undercooked oysters or clams are Vibrio infection, norovirus infection, and hepatitis A."
+    }]
+}
+        
+        
 """
 let discoverProducts = """
 {
@@ -2007,7 +2194,187 @@ let discoverProducts = """
   "benefits":"Yogurts can be high in protein, calcium, vitamins, and live culture, or probiotics, which can enhance the gut microbiota. These can offer protection for bones and teeth and help prevent digestive problems. Low-fat yogurt can be a useful source of protein on a weight-loss diet. Probiotics may boost the immune system.",
   "url":"https://i.ibb.co/hRgwxL3/yogurt.jpg",
   "harms":"It might make you feel bloated or give you gas. Both regular yogurt and Greek yogurt contain a small amount of lactose, which might be problematic for individuals who are lactose intolerant.Lactose is milk sugar which is broken down by the enzyme lactase."
-  }
+  },
+    {
+      "name": "Beef",
+      "weight": "100g",
+      "nutrition": [
+        {
+          "name": "Calories:143"
+        },
+        {
+          "name": "Sodium: "
+        },
+        {
+          "name": "Protein:26g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:3,5g"
+        }
+      ],
+      "benefits": "Beef is a good source of zinc, which the body needs to heal damaged tissue and support a healthy immune system. Children and adolescents also need healthy amounts of zinc to make sure they thrive and grow. A single serving of beef supplies the recommended daily amount of protein, helping to prevent lost muscle mass. Losing muscle mass can make you feel weaker and may make it difficult to keep your balance, especially if you’re age 55 or older.",
+      "url": "https://ibb.co/b7CkqyZ",
+      "harms": "Beef can be a healthy part of your diet, but should be eaten in moderation. According to experts from Harvard University, an accumulated body of evidence shows a clear link between high intake of red and processed meats and a higher risk for heart disease, cancer, diabetes, and premature death."
+    },
+     {
+      "name": "Chicken",
+      "weight": "85g",
+      "nutrition": [
+        {
+          "name": "Calories:143"
+        },
+        {
+          "name": "Sodium:60mg"
+        },
+        {
+          "name": "Protein:20"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:11g"
+        }
+      ],
+      "benefits": "A food rich in protein, chicken can help with weight management and reduce the risk of heart disease. Chicken contains the amino acid tryptophan, which has been linked to higher levels of serotonin (the “feel good” hormone) in our brains.",
+      "url": "https://ibb.co/9pzd084",
+      "harms": "Americans eat more chicken than any other meat. Chicken can be a nutritious choice, but raw chicken is often contaminated with Campylobacter bacteria and sometimes with Salmonella and Clostridium perfringens bacteria. If you eat undercooked chicken, you can get a foodborne illness, also called food poisoning."
+    },
+    {
+      "name": "Lamb",
+      "weight": "100g",
+      "nutrition": [
+        {
+          "name": "Calories:258"
+        },
+        {
+          "name": "Sodium:"
+        },
+        {
+          "name": "Protein:25.6g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:16.5g"
+        }
+      ],
+      "benefits": "Lamb contains several bioactive substances — such as creatine, CLA, and cholesterol — that may benefit health in various ways.",
+      "url": "https://ibb.co/cC7sZbk",
+      "harms": "High consumption of red meat like lamb increases the risk of serious and chronic illnesses, including stroke, prostate cancer, breast cancer, colorectal cancer, pancreatic cancer, heart disease, and diabetes."
+    },
+   {
+      "name": "Turkey",
+      "weight": "113.4g",
+      "nutrition": [
+        {
+          "name": "Calories:162"
+        },
+        {
+          "name": "Sodium:127mg"
+        },
+        {
+          "name": "Protein:25g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar:0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:6g"
+        }
+      ],
+      "benefits": "Turkey is a great source of protein. The body uses protein to build and repair bones, muscles, cartilage, skin, blood, and tissue. Protein is a macronutrient, which means that your body needs a lot of it. Your body can’t store protein, so you need to consume it every day.",
+      "url": "https://ibb.co/51BHhJW",
+      "harms": "Generally, all processed meat products, including turkey, contribute a significant amount of sodium, she said. Higher sodium contributes to high blood pressure and risk of cardiovascular events."
+    },
+     {
+      "name": "Salmon",
+      "weight": "",
+      "nutrition": [
+        {
+          "name": "Calories:121"
+        },
+        {
+          "name": "Sodium:37.4mg"
+        },
+        {
+          "name": "Protein:17g"
+        },
+        {
+          "name": "Carbs:0g"
+        },
+        {
+          "name": "Sugar: 0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat:5.4g"
+        }
+      ],
+      "benefits": "Salmon provides vitamin A and multiple B vitamins. It is one of the few natural food sources of vitamin D (wild salmon is a particularly good source).5 Salmon is also rich in several minerals, including magnesium, potassium, phosphorus, zinc, and selenium. Additionally, canned salmon contains lots of calcium (due to the edible bones).",
+      "url": "https://ibb.co/HG0pN2h",
+      "harms": "Eating large amounts of salmon and other fish could expose you to cancer-causing chemicals, or carcinogens. Fish get these chemicals by swimming in polluted water. Although both wild and farmed salmon carry this risk, the benefit–risk ratio for wild salmon is significantly greater."
+    },
+    {
+      "name": "Oysters",
+      "weight": "100g",
+      "nutrition": [
+        {
+          "name": "Calories:121"
+        },
+        {
+          "name": "Sodium:417mg"
+        },
+        {
+          "name": "Protein:9g"
+        },
+        {
+          "name": "Carbs:4g"
+        },
+        {
+          "name": "Sugar: 0g"
+        },
+        {
+          "name": "Fiber:0g"
+        },
+        {
+          "name": "Fat: 3g"
+        }
+      ],
+      "benefits": "Oysters are a rich source of vitamin D, copper, zinc, and manganese. These micronutrients, in combination with calcium, are thought to be key to slowing or even preventing bone loss in older women due to osteoporosis. Additionally, dietary sources of these minerals are thought to be more effective than supplements.",
+      "url": "https://ibb.co/Xbh5TL2",
+      "harms": "The illnesses of most concern from eating raw or undercooked oysters or clams are Vibrio infection, norovirus infection, and hepatitis A."
+    }
   ]
   }
 """

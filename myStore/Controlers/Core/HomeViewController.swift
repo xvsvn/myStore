@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
         json()
         json2()
         jsonBeverage()
+        jsonMeat()
        title = "Home"
         
         
@@ -40,7 +41,7 @@ class HomeViewController: UIViewController {
         view.addSubview(homeFedTable)
         homeFedTable.delegate = self
         homeFedTable.dataSource = self
-     //   homeFedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 200))
+    
     }
    
  
@@ -95,6 +96,10 @@ class HomeViewController: UIViewController {
                 cell.reload(items: resultArr2)
                 cell.delegate = self
             return cell
+            case 3:
+                    cell.reload(items: resultArr3)
+                    cell.delegate = self
+                return cell
             default:
                return UITableViewCell()
             }
@@ -131,7 +136,7 @@ extension HomeViewController: CollectionViewTableViewCellDelegate {
     func collectionViewTableViewCellDidTapCell(item:ResultItem) {
         DispatchQueue.main.async { [weak self] in
             let vc = InfoViewController(item: item)
-          
+            vc.hidesBottomBarWhenPushed = true
          
             self?.navigationController?.pushViewController(vc, animated: true)
         }
