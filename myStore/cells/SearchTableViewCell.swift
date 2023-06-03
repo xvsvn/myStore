@@ -12,7 +12,7 @@ class SearchTableViewCell: UITableViewCell {
     
     static let identifier = "SearchTableViewCell"
     
-    var allProducts:[ResultItem] = []
+    
   
     
         
@@ -76,7 +76,7 @@ class SearchTableViewCell: UITableViewCell {
 //            titleLabel.text = model.titleName
 //        }
         
-    func reloading(items: [ResultItem] ) {
+    func reloading(items: [ResultItem]?, tItems:[TitleItem]?) {
       
     }
     

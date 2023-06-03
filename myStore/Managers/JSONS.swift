@@ -1197,7 +1197,9 @@ let JSON4 = """
       "benefits": "Oysters are a rich source of vitamin D, copper, zinc, and manganese. These micronutrients, in combination with calcium, are thought to be key to slowing or even preventing bone loss in older women due to osteoporosis. Additionally, dietary sources of these minerals are thought to be more effective than supplements.",
       "url": "https://i.ibb.co/t4725Km/oyster-245235925.jpg",
       "harms": "The illnesses of most concern from eating raw or undercooked oysters or clams are Vibrio infection, norovirus infection, and hepatitis A."
-    }]
+    }
+     
+]
 }
         
         
@@ -2195,190 +2197,797 @@ let discoverProducts = """
   "url":"https://i.ibb.co/hRgwxL3/yogurt.jpg",
   "harms":"It might make you feel bloated or give you gas. Both regular yogurt and Greek yogurt contain a small amount of lactose, which might be problematic for individuals who are lactose intolerant.Lactose is milk sugar which is broken down by the enzyme lactase."
   },
-    {
-      "name": "Beef",
-      "weight": "100g",
-      "nutrition": [
         {
-          "name": "Calories:143"
+          "name": "Beef",
+          "weight": "100g",
+          "nutrition": [
+            {
+              "name": "Calories:143"
+            },
+            {
+              "name": "Sodium: "
+            },
+            {
+              "name": "Protein:26g"
+            },
+            {
+              "name": "Carbs:0g"
+            },
+            {
+              "name": "Sugar:0g"
+            },
+            {
+              "name": "Fiber:0g"
+            },
+            {
+              "name": "Fat:3,5g"
+            }
+          ],
+          "benefits": "Beef is a good source of zinc, which the body needs to heal damaged tissue and support a healthy immune system. Children and adolescents also need healthy amounts of zinc to make sure they thrive and grow. A single serving of beef supplies the recommended daily amount of protein, helping to prevent lost muscle mass. Losing muscle mass can make you feel weaker and may make it difficult to keep your balance, especially if you’re age 55 or older.",
+          "url": "https://i.ibb.co/vjTkr7v/Beef-loin.webp",
+          "harms": "Beef can be a healthy part of your diet, but should be eaten in moderation. According to experts from Harvard University, an accumulated body of evidence shows a clear link between high intake of red and processed meats and a higher risk for heart disease, cancer, diabetes, and premature death."
+        },
+         {
+          "name": "Chicken",
+          "weight": "85g",
+          "nutrition": [
+            {
+              "name": "Calories:143"
+            },
+            {
+              "name": "Sodium:60mg"
+            },
+            {
+              "name": "Protein:20"
+            },
+            {
+              "name": "Carbs:0g"
+            },
+            {
+              "name": "Sugar:0g"
+            },
+            {
+              "name": "Fiber:0g"
+            },
+            {
+              "name": "Fat:11g"
+            }
+          ],
+          "benefits": "A food rich in protein, chicken can help with weight management and reduce the risk of heart disease. Chicken contains the amino acid tryptophan, which has been linked to higher levels of serotonin (the “feel good” hormone) in our brains.",
+          "url": "https://i.ibb.co/6yVqSnt/should-you-wash-chicken.webp",
+          "harms": "Americans eat more chicken than any other meat. Chicken can be a nutritious choice, but raw chicken is often contaminated with Campylobacter bacteria and sometimes with Salmonella and Clostridium perfringens bacteria. If you eat undercooked chicken, you can get a foodborne illness, also called food poisoning."
         },
         {
-          "name": "Sodium: "
+          "name": "Lamb",
+          "weight": "100g",
+          "nutrition": [
+            {
+              "name": "Calories:258"
+            },
+            {
+              "name": "Sodium:"
+            },
+            {
+              "name": "Protein:25.6g"
+            },
+            {
+              "name": "Carbs:0g"
+            },
+            {
+              "name": "Sugar:0g"
+            },
+            {
+              "name": "Fiber:0g"
+            },
+            {
+              "name": "Fat:16.5g"
+            }
+          ],
+          "benefits": "Lamb contains several bioactive substances — such as creatine, CLA, and cholesterol — that may benefit health in various ways.",
+          "url": "https://i.ibb.co/5nfJSYG/36-lamb-00.jpg",
+          "harms": "High consumption of red meat like lamb increases the risk of serious and chronic illnesses, including stroke, prostate cancer, breast cancer, colorectal cancer, pancreatic cancer, heart disease, and diabetes."
+        },
+       {
+          "name": "Turkey",
+          "weight": "113.4g",
+          "nutrition": [
+            {
+              "name": "Calories:162"
+            },
+            {
+              "name": "Sodium:127mg"
+            },
+            {
+              "name": "Protein:25g"
+            },
+            {
+              "name": "Carbs:0g"
+            },
+            {
+              "name": "Sugar:0g"
+            },
+            {
+              "name": "Fiber:0g"
+            },
+            {
+              "name": "Fat:6g"
+            }
+          ],
+          "benefits": "Turkey is a great source of protein. The body uses protein to build and repair bones, muscles, cartilage, skin, blood, and tissue. Protein is a macronutrient, which means that your body needs a lot of it. Your body can’t store protein, so you need to consume it every day.",
+          "url": "https://i.ibb.co/nwzJMKs/file-20191121-547-x3akt7.jpg",
+          "harms": "Generally, all processed meat products, including turkey, contribute a significant amount of sodium, she said. Higher sodium contributes to high blood pressure and risk of cardiovascular events."
+        },
+         {
+          "name": "Salmon",
+          "weight": "",
+          "nutrition": [
+            {
+              "name": "Calories:121"
+            },
+            {
+              "name": "Sodium:37.4mg"
+            },
+            {
+              "name": "Protein:17g"
+            },
+            {
+              "name": "Carbs:0g"
+            },
+            {
+              "name": "Sugar: 0g"
+            },
+            {
+              "name": "Fiber:0g"
+            },
+            {
+              "name": "Fat:5.4g"
+            }
+          ],
+          "benefits": "Salmon provides vitamin A and multiple B vitamins. It is one of the few natural food sources of vitamin D (wild salmon is a particularly good source).5 Salmon is also rich in several minerals, including magnesium, potassium, phosphorus, zinc, and selenium. Additionally, canned salmon contains lots of calcium (due to the edible bones).",
+          "url": "https://i.ibb.co/kqp63ym/51815b-WAUp-L.jpg",
+          "harms": "Eating large amounts of salmon and other fish could expose you to cancer-causing chemicals, or carcinogens. Fish get these chemicals by swimming in polluted water. Although both wild and farmed salmon carry this risk, the benefit–risk ratio for wild salmon is significantly greater."
         },
         {
-          "name": "Protein:26g"
+          "name": "Oysters",
+          "weight": "100g",
+          "nutrition": [
+            {
+              "name": "Calories:121"
+            },
+            {
+              "name": "Sodium:417mg"
+            },
+            {
+              "name": "Protein:9g"
+            },
+            {
+              "name": "Carbs:4g"
+            },
+            {
+              "name": "Sugar: 0g"
+            },
+            {
+              "name": "Fiber:0g"
+            },
+            {
+              "name": "Fat: 3g"
+            }
+          ],
+          "benefits": "Oysters are a rich source of vitamin D, copper, zinc, and manganese. These micronutrients, in combination with calcium, are thought to be key to slowing or even preventing bone loss in older women due to osteoporosis. Additionally, dietary sources of these minerals are thought to be more effective than supplements.",
+          "url": "https://i.ibb.co/t4725Km/oyster-245235925.jpg",
+          "harms": "The illnesses of most concern from eating raw or undercooked oysters or clams are Vibrio infection, norovirus infection, and hepatitis A."
         },
-        {
-          "name": "Carbs:0g"
-        },
-        {
-          "name": "Sugar:0g"
-        },
-        {
-          "name": "Fiber:0g"
-        },
-        {
-          "name": "Fat:3,5g"
-        }
-      ],
-      "benefits": "Beef is a good source of zinc, which the body needs to heal damaged tissue and support a healthy immune system. Children and adolescents also need healthy amounts of zinc to make sure they thrive and grow. A single serving of beef supplies the recommended daily amount of protein, helping to prevent lost muscle mass. Losing muscle mass can make you feel weaker and may make it difficult to keep your balance, especially if you’re age 55 or older.",
-      "url": "https://ibb.co/b7CkqyZ",
-      "harms": "Beef can be a healthy part of your diet, but should be eaten in moderation. According to experts from Harvard University, an accumulated body of evidence shows a clear link between high intake of red and processed meats and a higher risk for heart disease, cancer, diabetes, and premature death."
-    },
      {
-      "name": "Chicken",
-      "weight": "85g",
-      "nutrition": [
-        {
-          "name": "Calories:143"
-        },
-        {
-          "name": "Sodium:60mg"
-        },
-        {
-          "name": "Protein:20"
-        },
-        {
-          "name": "Carbs:0g"
-        },
-        {
-          "name": "Sugar:0g"
-        },
-        {
-          "name": "Fiber:0g"
-        },
-        {
-          "name": "Fat:11g"
-        }
-      ],
-      "benefits": "A food rich in protein, chicken can help with weight management and reduce the risk of heart disease. Chicken contains the amino acid tryptophan, which has been linked to higher levels of serotonin (the “feel good” hormone) in our brains.",
-      "url": "https://ibb.co/9pzd084",
-      "harms": "Americans eat more chicken than any other meat. Chicken can be a nutritious choice, but raw chicken is often contaminated with Campylobacter bacteria and sometimes with Salmonella and Clostridium perfringens bacteria. If you eat undercooked chicken, you can get a foodborne illness, also called food poisoning."
-    },
-    {
-      "name": "Lamb",
-      "weight": "100g",
-      "nutrition": [
-        {
-          "name": "Calories:258"
-        },
-        {
-          "name": "Sodium:"
-        },
-        {
-          "name": "Protein:25.6g"
-        },
-        {
-          "name": "Carbs:0g"
-        },
-        {
-          "name": "Sugar:0g"
-        },
-        {
-          "name": "Fiber:0g"
-        },
-        {
-          "name": "Fat:16.5g"
-        }
-      ],
-      "benefits": "Lamb contains several bioactive substances — such as creatine, CLA, and cholesterol — that may benefit health in various ways.",
-      "url": "https://ibb.co/cC7sZbk",
-      "harms": "High consumption of red meat like lamb increases the risk of serious and chronic illnesses, including stroke, prostate cancer, breast cancer, colorectal cancer, pancreatic cancer, heart disease, and diabetes."
-    },
-   {
-      "name": "Turkey",
-      "weight": "113.4g",
-      "nutrition": [
-        {
-          "name": "Calories:162"
-        },
-        {
-          "name": "Sodium:127mg"
-        },
-        {
-          "name": "Protein:25g"
-        },
-        {
-          "name": "Carbs:0g"
-        },
-        {
-          "name": "Sugar:0g"
-        },
-        {
-          "name": "Fiber:0g"
-        },
-        {
-          "name": "Fat:6g"
-        }
-      ],
-      "benefits": "Turkey is a great source of protein. The body uses protein to build and repair bones, muscles, cartilage, skin, blood, and tissue. Protein is a macronutrient, which means that your body needs a lot of it. Your body can’t store protein, so you need to consume it every day.",
-      "url": "https://ibb.co/51BHhJW",
-      "harms": "Generally, all processed meat products, including turkey, contribute a significant amount of sodium, she said. Higher sodium contributes to high blood pressure and risk of cardiovascular events."
-    },
+       "name": "Milk",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 60"
+         },
+         {
+           "name": "Water: 88%"
+         },
+         {
+           "name": "Protein: 3.2 grams"
+         },
+         {
+           "name": "Carbs: 4.8 grams"
+         },
+         {
+           "name": "Sugar: 5.1 grams"
+         },
+         {
+           "name": "Fat: 3.6 grams"
+         },
+         {
+           "name": "Calcium: 120 mg"
+         }
+       ],
+       "benefits": "Milk is a rich source of calcium and vitamin D, which are important for strong bones and teeth. It also provides protein for muscle growth and repair. Additionally, milk contains various vitamins and minerals that support overall health.",
+       "url": "https://i.ibb.co/VVTGLDM/soy-milk-03-1600x.png",
+       "harms": "Some people are lactose intolerant and may experience digestive discomfort or allergic reactions to milk."
+     },
      {
-      "name": "Salmon",
-      "weight": "",
-      "nutrition": [
-        {
-          "name": "Calories:121"
-        },
-        {
-          "name": "Sodium:37.4mg"
-        },
-        {
-          "name": "Protein:17g"
-        },
-        {
-          "name": "Carbs:0g"
-        },
-        {
-          "name": "Sugar: 0g"
-        },
-        {
-          "name": "Fiber:0g"
-        },
-        {
-          "name": "Fat:5.4g"
-        }
-      ],
-      "benefits": "Salmon provides vitamin A and multiple B vitamins. It is one of the few natural food sources of vitamin D (wild salmon is a particularly good source).5 Salmon is also rich in several minerals, including magnesium, potassium, phosphorus, zinc, and selenium. Additionally, canned salmon contains lots of calcium (due to the edible bones).",
-      "url": "https://ibb.co/HG0pN2h",
-      "harms": "Eating large amounts of salmon and other fish could expose you to cancer-causing chemicals, or carcinogens. Fish get these chemicals by swimming in polluted water. Although both wild and farmed salmon carry this risk, the benefit–risk ratio for wild salmon is significantly greater."
-    },
-    {
-      "name": "Oysters",
-      "weight": "100g",
-      "nutrition": [
-        {
-          "name": "Calories:121"
-        },
-        {
-          "name": "Sodium:417mg"
-        },
-        {
-          "name": "Protein:9g"
-        },
-        {
-          "name": "Carbs:4g"
-        },
-        {
-          "name": "Sugar: 0g"
-        },
-        {
-          "name": "Fiber:0g"
-        },
-        {
-          "name": "Fat: 3g"
-        }
-      ],
-      "benefits": "Oysters are a rich source of vitamin D, copper, zinc, and manganese. These micronutrients, in combination with calcium, are thought to be key to slowing or even preventing bone loss in older women due to osteoporosis. Additionally, dietary sources of these minerals are thought to be more effective than supplements.",
-      "url": "https://ibb.co/Xbh5TL2",
-      "harms": "The illnesses of most concern from eating raw or undercooked oysters or clams are Vibrio infection, norovirus infection, and hepatitis A."
-    }
+       "name": "Yogurt",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 59"
+         },
+         {
+           "name": "Water: 85%"
+         },
+         {
+           "name": "Protein: 3.5 grams"
+         },
+         {
+           "name": "Carbs: 3.6 grams"
+         },
+         {
+           "name": "Sugar: 3.2 grams"
+         },
+         {
+           "name": "Fat: 3.3 grams"
+         },
+         {
+           "name": "Calcium: 110 mg"
+         }
+       ],
+       "benefits": "Yogurt is a good source of protein, calcium, and probiotics. Probiotics are beneficial bacteria that support gut health. Regular consumption of yogurt may improve digestion, strengthen the immune system, and promote a healthy gut microbiome.",
+       "url": "https://i.ibb.co/hRgwxL3/yogurt.jpg",
+       "harms": "Some yogurts may contain added sugars or artificial ingredients, so it's important to choose plain or low-sugar options."
+     },
+     {
+       "name": "Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 402"
+         },
+         {
+           "name": "Water: 37%"
+         },
+         {
+           "name": "Protein: 25 grams"
+         },
+         {
+           "name": "Carbs: 1.3 grams"
+         },
+         {
+           "name": "Sugar: 0.1 grams"
+         },
+         {
+           "name": "Fat: 33 grams"
+         },
+         {
+           "name": "Calcium: 721 mg"
+         }
+       ],
+       "benefits": "Cheese is a good source of protein and calcium. It also provides vitamins A and B12. However, it should be consumed in moderation due to its high fat and calorie content. Cheese can be part of a balanced diet when consumed in appropriate portions.",
+       "url": "https://i.ibb.co/wMttHdz/emmentaler-istock.jpg",
+       "harms": "Some people may be lactose intolerant or have dairy allergies, which can cause adverse reactions when consuming cheese."
+     },
+     {
+       "name": "Butter",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 717"
+         },
+         {
+           "name": "Water: 15%"
+         },
+         {
+           "name": "Protein: 0.9 grams"
+         },
+         {
+           "name": "Carbs: 0.1 grams"
+         },
+         {
+           "name": "Sugar: 0.1 grams"
+         },
+         {
+           "name": "Fat: 81 grams"
+         },
+         {
+           "name": "Calcium: 24 mg"
+         }
+       ],
+       "benefits": "Butter is a dairy product made from cream. It is a good source of vitamins A, E, and K. However, due to its high saturated fat content, it should be consumed in moderation as part of a balanced diet.",
+       "url": "https://i.ibb.co/0MBvYfW/How-To-Soften-Butter-013-2000-61e8b4e1ad9c431887472483ae714dbb.jpg",
+       "harms": "Butter is high in saturated fats, which may contribute to heart disease and other health issues if consumed in excess."
+     },
+     {
+       "name": "Sour Cream",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 193"
+         },
+         {
+           "name": "Water: 70%"
+         },
+         {
+           "name": "Protein: 2.3 grams"
+         },
+         {
+           "name": "Carbs: 4.3 grams"
+         },
+         {
+           "name": "Sugar: 2.9 grams"
+         },
+         {
+           "name": "Fat: 18 grams"
+         },
+         {
+           "name": "Calcium: 76 mg"
+         }
+       ],
+       "benefits": "Sour cream is a versatile dairy product that can be used in cooking and as a condiment. It adds richness and tanginess to dishes. However, it is high in fat and calories, so it should be consumed in moderation.",
+       "url": "https://i.ibb.co/FJdyPGR/Getty-Images-497100969-2000-bcc4707e1b0a4003a1bff82a848b46d7.jpg",
+       "harms": "Sour cream is high in saturated fat and calories, which can contribute to weight gain and health issues when consumed in excess."
+     },
+     {
+       "name": "Cream Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 342"
+         },
+         {
+           "name": "Water: 52%"
+         },
+         {
+           "name": "Protein: 6.1 grams"
+         },
+         {
+           "name": "Carbs: 4.1 grams"
+         },
+         {
+           "name": "Sugar: 3.7 grams"
+         },
+         {
+           "name": "Fat: 34 grams"
+         },
+         {
+           "name": "Calcium: 78 mg"
+         }
+       ],
+       "benefits": "Cream cheese is a soft, spreadable cheese commonly used in desserts and savory dishes. It is a good source of protein and calcium. However, it is high in fat and calories, so it should be consumed in moderation.",
+       "url": "https://i.ibb.co/DV6P3MS/Easiest-Homemade-Cream-Cheese-FEATURE.jpg",
+       "harms": "Cream cheese is high in saturated fat and calories, which can contribute to weight gain and health issues when consumed in excess."
+     },
+     {
+       "name": "Cottage Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 98"
+         },
+         {
+           "name": "Water: 79%"
+         },
+         {
+           "name": "Protein: 11 grams"
+         },
+         {
+           "name": "Carbs: 3.4 grams"
+         },
+         {
+           "name": "Sugar: 3.4 grams"
+         },
+         {
+           "name": "Fat: 4.3 grams"
+         },
+         {
+           "name": "Calcium: 83 mg"
+         }
+       ],
+       "benefits": "Cottage cheese is a fresh cheese with a mild flavor. It is a good source of protein and calcium. Cottage cheese can be a healthy addition to a balanced diet and is often used in salads, snacks, and recipes.",
+       "url": "https://i.ibb.co/RpQx0J0/10893-The-Pros-and-Cons-of-the-Cottage-Cheese-Diet-732x549-thumbnail-732x549.jpg",
+       "harms": "Some cottage cheese varieties may be high in sodium, so it's important to choose low-sodium options if watching your sodium intake."
+     },
+     
+     {
+       "name": "Ice Cream",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 207"
+         },
+         {
+           "name": "Water: 61%"
+         },
+         {
+           "name": "Protein: 3.6 grams"
+         },
+         {
+           "name": "Carbs: 27 grams"
+         },
+         {
+           "name": "Sugar: 22 grams"
+         },
+         {
+           "name": "Fat: 10 grams"
+         },
+         {
+           "name": "Calcium: 119 mg"
+         }
+       ],
+       "benefits": "Ice cream is a frozen dairy dessert enjoyed by many. It provides energy, calcium, and small amounts of protein. However, it is high in sugar and calories, so it should be consumed in moderation as an occasional treat.",
+       "url": "https://i.ibb.co/N6mv7z3/Scoops-kinds-ice-cream.jpg",
+       "harms": "Ice cream is high in sugar and saturated fat, which can contribute to weight gain and other health issues when consumed in excess."
+     },
+     {
+       "name": "Condensed Milk",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 321"
+         },
+         {
+           "name": "Water: 26%"
+         },
+         {
+           "name": "Protein: 8.2 grams"
+         },
+         {
+           "name": "Carbs: 54 grams"
+         },
+         {
+           "name": "Sugar: 54 grams"
+         },
+         {
+           "name": "Fat: 8.9 grams"
+         },
+         {
+           "name": "Calcium: 290 mg"
+         }
+       ],
+       "benefits": "Condensed milk is a thick, sweetened dairy product commonly used in desserts and baking. It provides energy, protein, and calcium. However, it is high in sugar and calories, so it should be consumed in moderation.",
+       "url": "https://i.ibb.co/KWHLTKm/Vegan-Condensed-Milk-Square-2.jpg",
+       "harms": "Condensed milk is high in sugar and calories, which can contribute to weight gain and other health issues when consumed in excess."
+     },
+     {
+       "name": "Mozzarella Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 280"
+         },
+         {
+           "name": "Water: 50%"
+         },
+         {
+           "name": "Protein: 22 grams"
+         },
+         {
+           "name": "Carbs: 2.2 grams"
+         },
+         {
+           "name": "Sugar: 1.3 grams"
+         },
+         {
+           "name": "Fat: 22 grams"
+         },
+         {
+           "name": "Calcium: 505 mg"
+         }
+       ],
+       "benefits": "Mozzarella cheese is a soft and mild cheese commonly used in Italian cuisine. It is a good source of protein and calcium. Mozzarella cheese can be enjoyed in salads, sandwiches, and various dishes.",
+       "url": "https://i.ibb.co/vm1WT0V/254478-homemade-mozzarella-cheese-ddmfs-4x3-1.jpg",
+       "harms": "Mozzarella cheese is high in saturated fat and calories, so it should be consumed in moderation as part of a balanced diet."
+     }
   ]
   }
 """
 
-
+let freshProducts =  """
+ {
+   "data": [
+     {
+       "name": "Milk",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 60"
+         },
+         {
+           "name": "Water: 88%"
+         },
+         {
+           "name": "Protein: 3.2 grams"
+         },
+         {
+           "name": "Carbs: 4.8 grams"
+         },
+         {
+           "name": "Sugar: 5.1 grams"
+         },
+         {
+           "name": "Fat: 3.6 grams"
+         },
+         {
+           "name": "Calcium: 120 mg"
+         }
+       ],
+       "benefits": "Milk is a rich source of calcium and vitamin D, which are important for strong bones and teeth. It also provides protein for muscle growth and repair. Additionally, milk contains various vitamins and minerals that support overall health.",
+       "url": "https://i.ibb.co/VVTGLDM/soy-milk-03-1600x.png",
+       "harms": "Some people are lactose intolerant and may experience digestive discomfort or allergic reactions to milk."
+     },
+     {
+       "name": "Yogurt",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 59"
+         },
+         {
+           "name": "Water: 85%"
+         },
+         {
+           "name": "Protein: 3.5 grams"
+         },
+         {
+           "name": "Carbs: 3.6 grams"
+         },
+         {
+           "name": "Sugar: 3.2 grams"
+         },
+         {
+           "name": "Fat: 3.3 grams"
+         },
+         {
+           "name": "Calcium: 110 mg"
+         }
+       ],
+       "benefits": "Yogurt is a good source of protein, calcium, and probiotics. Probiotics are beneficial bacteria that support gut health. Regular consumption of yogurt may improve digestion, strengthen the immune system, and promote a healthy gut microbiome.",
+       "url": "https://i.ibb.co/hRgwxL3/yogurt.jpg",
+       "harms": "Some yogurts may contain added sugars or artificial ingredients, so it's important to choose plain or low-sugar options."
+     },
+     {
+       "name": "Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 402"
+         },
+         {
+           "name": "Water: 37%"
+         },
+         {
+           "name": "Protein: 25 grams"
+         },
+         {
+           "name": "Carbs: 1.3 grams"
+         },
+         {
+           "name": "Sugar: 0.1 grams"
+         },
+         {
+           "name": "Fat: 33 grams"
+         },
+         {
+           "name": "Calcium: 721 mg"
+         }
+       ],
+       "benefits": "Cheese is a good source of protein and calcium. It also provides vitamins A and B12. However, it should be consumed in moderation due to its high fat and calorie content. Cheese can be part of a balanced diet when consumed in appropriate portions.",
+       "url": "https://i.ibb.co/wMttHdz/emmentaler-istock.jpg",
+       "harms": "Some people may be lactose intolerant or have dairy allergies, which can cause adverse reactions when consuming cheese."
+     },
+     {
+       "name": "Butter",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 717"
+         },
+         {
+           "name": "Water: 15%"
+         },
+         {
+           "name": "Protein: 0.9 grams"
+         },
+         {
+           "name": "Carbs: 0.1 grams"
+         },
+         {
+           "name": "Sugar: 0.1 grams"
+         },
+         {
+           "name": "Fat: 81 grams"
+         },
+         {
+           "name": "Calcium: 24 mg"
+         }
+       ],
+       "benefits": "Butter is a dairy product made from cream. It is a good source of vitamins A, E, and K. However, due to its high saturated fat content, it should be consumed in moderation as part of a balanced diet.",
+       "url": "https://i.ibb.co/0MBvYfW/How-To-Soften-Butter-013-2000-61e8b4e1ad9c431887472483ae714dbb.jpg",
+       "harms": "Butter is high in saturated fats, which may contribute to heart disease and other health issues if consumed in excess."
+     },
+     {
+       "name": "Sour Cream",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 193"
+         },
+         {
+           "name": "Water: 70%"
+         },
+         {
+           "name": "Protein: 2.3 grams"
+         },
+         {
+           "name": "Carbs: 4.3 grams"
+         },
+         {
+           "name": "Sugar: 2.9 grams"
+         },
+         {
+           "name": "Fat: 18 grams"
+         },
+         {
+           "name": "Calcium: 76 mg"
+         }
+       ],
+       "benefits": "Sour cream is a versatile dairy product that can be used in cooking and as a condiment. It adds richness and tanginess to dishes. However, it is high in fat and calories, so it should be consumed in moderation.",
+       "url": "https://i.ibb.co/FJdyPGR/Getty-Images-497100969-2000-bcc4707e1b0a4003a1bff82a848b46d7.jpg",
+       "harms": "Sour cream is high in saturated fat and calories, which can contribute to weight gain and health issues when consumed in excess."
+     },
+     {
+       "name": "Cream Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 342"
+         },
+         {
+           "name": "Water: 52%"
+         },
+         {
+           "name": "Protein: 6.1 grams"
+         },
+         {
+           "name": "Carbs: 4.1 grams"
+         },
+         {
+           "name": "Sugar: 3.7 grams"
+         },
+         {
+           "name": "Fat: 34 grams"
+         },
+         {
+           "name": "Calcium: 78 mg"
+         }
+       ],
+       "benefits": "Cream cheese is a soft, spreadable cheese commonly used in desserts and savory dishes. It is a good source of protein and calcium. However, it is high in fat and calories, so it should be consumed in moderation.",
+       "url": "https://i.ibb.co/DV6P3MS/Easiest-Homemade-Cream-Cheese-FEATURE.jpg",
+       "harms": "Cream cheese is high in saturated fat and calories, which can contribute to weight gain and health issues when consumed in excess."
+     },
+     {
+       "name": "Cottage Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 98"
+         },
+         {
+           "name": "Water: 79%"
+         },
+         {
+           "name": "Protein: 11 grams"
+         },
+         {
+           "name": "Carbs: 3.4 grams"
+         },
+         {
+           "name": "Sugar: 3.4 grams"
+         },
+         {
+           "name": "Fat: 4.3 grams"
+         },
+         {
+           "name": "Calcium: 83 mg"
+         }
+       ],
+       "benefits": "Cottage cheese is a fresh cheese with a mild flavor. It is a good source of protein and calcium. Cottage cheese can be a healthy addition to a balanced diet and is often used in salads, snacks, and recipes.",
+       "url": "https://i.ibb.co/RpQx0J0/10893-The-Pros-and-Cons-of-the-Cottage-Cheese-Diet-732x549-thumbnail-732x549.jpg",
+       "harms": "Some cottage cheese varieties may be high in sodium, so it's important to choose low-sodium options if watching your sodium intake."
+     },
+     
+     {
+       "name": "Ice Cream",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 207"
+         },
+         {
+           "name": "Water: 61%"
+         },
+         {
+           "name": "Protein: 3.6 grams"
+         },
+         {
+           "name": "Carbs: 27 grams"
+         },
+         {
+           "name": "Sugar: 22 grams"
+         },
+         {
+           "name": "Fat: 10 grams"
+         },
+         {
+           "name": "Calcium: 119 mg"
+         }
+       ],
+       "benefits": "Ice cream is a frozen dairy dessert enjoyed by many. It provides energy, calcium, and small amounts of protein. However, it is high in sugar and calories, so it should be consumed in moderation as an occasional treat.",
+       "url": "https://i.ibb.co/N6mv7z3/Scoops-kinds-ice-cream.jpg",
+       "harms": "Ice cream is high in sugar and saturated fat, which can contribute to weight gain and other health issues when consumed in excess."
+     },
+     {
+       "name": "Condensed Milk",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 321"
+         },
+         {
+           "name": "Water: 26%"
+         },
+         {
+           "name": "Protein: 8.2 grams"
+         },
+         {
+           "name": "Carbs: 54 grams"
+         },
+         {
+           "name": "Sugar: 54 grams"
+         },
+         {
+           "name": "Fat: 8.9 grams"
+         },
+         {
+           "name": "Calcium: 290 mg"
+         }
+       ],
+       "benefits": "Condensed milk is a thick, sweetened dairy product commonly used in desserts and baking. It provides energy, protein, and calcium. However, it is high in sugar and calories, so it should be consumed in moderation.",
+       "url": "https://i.ibb.co/KWHLTKm/Vegan-Condensed-Milk-Square-2.jpg",
+       "harms": "Condensed milk is high in sugar and calories, which can contribute to weight gain and other health issues when consumed in excess."
+     },
+     {
+       "name": "Mozzarella Cheese",
+       "weight": "Per 100 grams",
+       "nutrition": [
+         {
+           "name": "Calories: 280"
+         },
+         {
+           "name": "Water: 50%"
+         },
+         {
+           "name": "Protein: 22 grams"
+         },
+         {
+           "name": "Carbs: 2.2 grams"
+         },
+         {
+           "name": "Sugar: 1.3 grams"
+         },
+         {
+           "name": "Fat: 22 grams"
+         },
+         {
+           "name": "Calcium: 505 mg"
+         }
+       ],
+       "benefits": "Mozzarella cheese is a soft and mild cheese commonly used in Italian cuisine. It is a good source of protein and calcium. Mozzarella cheese can be enjoyed in salads, sandwiches, and various dishes.",
+       "url": "https://i.ibb.co/vm1WT0V/254478-homemade-mozzarella-cheese-ddmfs-4x3-1.jpg",
+       "harms": "Mozzarella cheese is high in saturated fat and calories, so it should be consumed in moderation as part of a balanced diet."
+     }
+   ]
+ }
+ """
 
 

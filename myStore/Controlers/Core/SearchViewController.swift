@@ -1,5 +1,5 @@
 //
-//  ShoesViewController.swift
+//  SearchViewController.swift
 //  myStore
 //
 //  Created by Xasan Xasanov on 22/05/22.
@@ -14,7 +14,7 @@ class SearchViewController: UIViewController {
     
     var searchController:UISearchController!
     var searchResults:[ResultItem] = []
-   
+    var titles: [TitleItem] = [TitleItem]()
     var favorites:[ResultItem] = []
  
     
@@ -39,7 +39,9 @@ class SearchViewController: UIViewController {
         title = "Search products"
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
         searchController = UISearchController(searchResultsController: nil)
        searchController.searchResultsUpdater = self
         self.navigationItem.searchController = searchController
@@ -76,7 +78,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource, UISe
         let prod = (searchController.isActive) ?
         searchResults[indexPath.row] : discoverItems[indexPath.row]
       
-        cell.reloading(items: discoverItems)
+        cell.reloading(items: discoverItems, tItems: titles)
         cell.titleLabel.text = prod.name
         cell.prodImg.sd_setImage(with: URL(string: prod.url), placeholderImage: UIImage(named: "placeholder.png"))
        

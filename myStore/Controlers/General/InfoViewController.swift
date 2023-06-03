@@ -83,18 +83,15 @@ class InfoViewController: UIViewController {
         return nutrition
     }()
   
+  private  let item2: ResultItem?
+  private let titleItem:TitleItem?
     
-
-    
-
-  private  let item2: ResultItem
-    
-    
-     init(item: ResultItem) {
+    init(item: ResultItem? = nil, tItem:TitleItem? = nil ) {
         self.item2 = item
+        self.titleItem = tItem
+        
         super.init(nibName: nil, bundle: nil)
     }
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -111,7 +108,7 @@ class InfoViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
        super.viewDidLayoutSubviews()
-        productImage.sd_setImage(with: URL(string: item2.url), placeholderImage: UIImage(named: "placeholder.png"))
+        productImage.sd_setImage(with: URL(string: item2?.url ?? ""), placeholderImage: UIImage(named: "placeholder.png"))
         imgView.addSubview(productImage)
         productImage.frame =  CGRect(x: 0, y: 0, width: view.bounds.width, height: 300)
         imgView.frame =  CGRect(x: 0, y: 0, width: view.bounds.width, height: 300)
@@ -123,9 +120,10 @@ class InfoViewController: UIViewController {
         
        
         navigationItem.largeTitleDisplayMode = .never
-        productImage.sd_setImage(with: URL(string: item2.url), placeholderImage: UIImage(named: "placeholder.png"))
-      //  navigationController?.navigationBar.barTintColor = UIColor.black
-     //   navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        productImage.sd_setImage(with: URL(string: item2?.url ?? ""), placeholderImage: UIImage(named: "placeholder.png"))
+        
+        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
        
     
     }
@@ -136,8 +134,8 @@ class InfoViewController: UIViewController {
         view.backgroundColor = .black
       
 //        tableV.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 200))
-        title = item2.name
-        amount.text = item2.weight.capitalized
+        title = item2?.name
+        amount.text = item2?.weight.capitalized
         view.addSubview(tableV)
        
         tableV.translatesAutoresizingMaskIntoConstraints = false
@@ -149,7 +147,7 @@ class InfoViewController: UIViewController {
       
        var text = ""
     
-        item2.nutrition.forEach { item in
+        item2?.nutrition.forEach { item in
             
             text += item.name + "\n"
         }
@@ -186,16 +184,16 @@ extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            cell.infoLabel.text = item2.weight
+            cell.infoLabel.text = item2?.weight
             return cell
         case 1:
             cell.infoLabel.text = nut.text
             return cell
         case 2:
-            cell.infoLabel.text = item2.benefits
+            cell.infoLabel.text = item2?.benefits
             return cell
         case 3:
-            cell.infoLabel.text = item2.harms
+            cell.infoLabel.text = item2?.harms
             return cell
             
         default:

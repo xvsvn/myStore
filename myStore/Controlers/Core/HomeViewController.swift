@@ -11,7 +11,7 @@ import SDWebImage
 
 class HomeViewController: UIViewController {
    
-    let sectionTitles:[String] = ["Organic Foods", "Bakery and Bread", "Beverages or Drinks", "Meat and Seafood", "Fresh dairy products", "Snacks"] //"Pasta and Rice"
+    let sectionTitles:[String] = ["Organic Foods", "Bakery and Bread", "Beverages or Drinks", "Meat and Seafood", "Fresh dairy products"] //"Pasta and Rice" , "Snacks"
     
   
     
@@ -34,9 +34,11 @@ class HomeViewController: UIViewController {
         json2()
         jsonBeverage()
         jsonMeat()
+        freshFood()
        title = "Home"
         
-        
+     
+       
         homeFedTable.backgroundColor = .black
         view.addSubview(homeFedTable)
         homeFedTable.delegate = self
@@ -49,17 +51,16 @@ class HomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
        super.viewDidLayoutSubviews()
         navigationItem.largeTitleDisplayMode = .never
-      //  navigationController?.navigationBar.barTintColor = UIColor.black
-     //   navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    
         homeFedTable.frame = view.bounds
-        
+        navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        tabBarController?.tabBar.barStyle = .black
+        tabBarController?.tabBar.selectedImageTintColor = .white
     }
 }
     
 
-
-
-    
     extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
        
         
@@ -98,6 +99,10 @@ class HomeViewController: UIViewController {
             return cell
             case 3:
                     cell.reload(items: resultArr3)
+                    cell.delegate = self
+                return cell
+            case 4:
+                    cell.reload(items: freshProductes)
                     cell.delegate = self
                 return cell
             default:

@@ -15,7 +15,7 @@ var discoverItems:[ResultItem] = []
 var products:[ResultItem] = []
 var searchResults:[ResultItem] = []
 var favorites:[ResultItem] = []
-
+var freshProductes:[ResultItem] = []
 struct Result:Codable {
     let data: [ResultItem]
     
@@ -106,3 +106,14 @@ func favoriteData(){
     }
 }
 
+
+func freshFood(){
+    let data = freshProducts.data(using: .utf8)!
+    let decoder = JSONDecoder()
+    do {
+        let model = try decoder.decode(Result.self, from: data)
+        freshProductes = model.data
+    } catch {
+        print("Error: \(error)")
+    }
+}
